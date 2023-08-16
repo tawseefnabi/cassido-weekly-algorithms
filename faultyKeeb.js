@@ -9,11 +9,12 @@
 // > faultyKeeb('hello world!')
 // > 'w hllrld!'
 
+const VOWELS = ["a", "e", "i", "o", "u", "y"]
 const faultyKeeb = (word) => {
     var faultyString = ""
     for (let chr of word){
-      if("aeiou".includes(chr)){
-        faultyString =  reverseString(faultyString)
+      if(VOWELS.includes(chr)){
+        faultyString =  faultyString.split("").reverse().join("")
         
       } else{
         faultyString +=chr
