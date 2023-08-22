@@ -9,7 +9,6 @@ guessNumber = () =>{
   // take input from the user
   let num = prompt("Guess number between 1 to 100: ")
   while(guessCount<maxGuessess ){
-    // guess = Math.floor(Math.random()*100) +1
       if(num>guess){
         console.log(`Your ${num} is too high, Please enter lower and your guess count is ${guessCount}`);
         guessCount++
