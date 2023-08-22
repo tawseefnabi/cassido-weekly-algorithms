@@ -6,7 +6,7 @@ guessNumber = () =>{
   let maxGuessess = 10
   let guessCount = 0
   let guess = Math.floor(Math.random()*100) +1
-  // take input from the user
+  // generate random number
   let num = prompt("Guess number between 1 to 100: ")
   while(guessCount<maxGuessess ){
       if(num>guess){
