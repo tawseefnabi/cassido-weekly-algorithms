@@ -41,7 +41,7 @@ const wordToNumMap: Record<string, number> = {
   thousand: 1000,
   million: 1000000,
 }
-function parseNumber(englishWords:string): number {
+export function parseNumber(englishWords:string): number {
   const words = englishWords.toLowerCase().split(' ');
   let result = 0;
   let currentNumber = 0;
