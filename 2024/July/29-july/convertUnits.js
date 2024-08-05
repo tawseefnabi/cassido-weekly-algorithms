@@ -85,4 +85,4 @@ function convertImperialToMetric(lengthInImperial, imperialUnit) {
 let metricLength = 2.5; // Length in metric units
 let metricUnit = 'meters'; // Metric unit ('millimeters', 'centimeters', 'meters')
 
-console.log(`Converting ${metricLength} ${metricUnit
+console.log(`Converting ${metricLength} ${metricUnit}`)
