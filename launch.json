@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug index Handler",
+            // "runtimeExecutable": "ts-node",
+            "program": "${workspaceFolder}/node_modules/ts-node/dist/bin.js",
+            "args": [
+              "${workspaceFolder}/src/lib/compute/lambdas/src/handlers/index-handler.ts"
+            ],
+            "outputCapture": "std",
+            "skipFiles": [
+              "<node_internals>/**"
+            ]
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug download Handler",
+            // "runtimeExecutable": "ts-node",
+            "program": "${workspaceFolder}/node_modules/ts-node/dist/bin.js",
+            "args": [
+              "${workspaceFolder}/src/lib/compute/lambdas/src/handlers/download-handler.ts"
+            ],
+            "outputCapture": "std",
+            "skipFiles": [
+              "<node_internals>/**"
+            ]
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug upload Handler",
+            // "runtimeExecutable": "ts-node",
+            "program": "${workspaceFolder}/node_modules/ts-node/dist/bin.js",
+            "args": [
+              "${workspaceFolder}/src/lib/compute/lambdas/src/handlers/upload-handler.ts"
+            ],
+            "outputCapture": "std",
+            "skipFiles": [
+              "<node_internals>/**"
+            ]
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug list Handler",
+            // "runtimeExecutable": "ts-node",
+            "program": "${workspaceFolder}/node_modules/ts-node/dist/bin.js",
+            "args": [
+              "${workspaceFolder}/src/lib/compute/lambdas/src/handlers/list-handler.ts"
+            ],
+            "outputCapture": "std",
+            "skipFiles": [
+              "<node_internals>/**"
+            ]
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug forge Handler",
+            // "runtimeExecutable": "ts-node",
+            "program": "${workspaceFolder}/node_modules/ts-node/dist/bin.js",
+            "args": [
+              "${workspaceFolder}/src/lib/compute/lambdas/src/handlers/forge-auth-handler_v2.js"
+            ],
+            "outputCapture": "std",
+            "skipFiles": [
+              "<node_internals>/**"
+            ]
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug forge auth Handler",
+            // "runtimeExecutable": "ts-node",
+            "program": "${workspaceFolder}/node_modules/ts-node/dist/bin.js",
+            "args": [
+              "${workspaceFolder}/src/lib/compute/lambdas/forge-authorizer/index.js"
+            ],
+            "outputCapture": "std",
+            "skipFiles": [
+              "<node_internals>/**"
+            ]
+          }
+    ]
+  }
