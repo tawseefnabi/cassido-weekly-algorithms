@@ -90,3 +90,14 @@
           }
     ]
   }
+
+
+
+if (require.main === module) {
+  // Load the mock event for local debugging
+  const mockEvent = require('/Users/bhatt/Desktop/autodesk/pricing-data-application-assembly/__mocks__/mock-index-event.json'); // Ensure mock event file exists
+  (async () => {
+    const result = await handler(mockEvent);
+    console.log(result); // Log the result for debugging
+  })();
+}
